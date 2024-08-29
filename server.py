@@ -58,7 +58,7 @@ class Server:
 
 
 if __name__ == "__main__":
-    server = Server("localhost", 4000)
+    server = Server("localhost", 4000)   
     game_loop = GameLoop(server, tick_rate=1.0)  # Set the tick rate to 1 second
 
     try:

@@ -1,11 +1,11 @@
 import socket
-from mud.game.character import Character
+from mud.characters.player import Player
 
 class Connection:
     def __init__(self, sock, address):
         self.sock = sock
         self.address = address
-        self.character = Character()  # Initialize a new character for this connection
+        self.character = Player()  # Initialize a new character for this connection
         self.creation_step = 0  # Track which step of character creation the player is on
 
     def receive_data(self):
